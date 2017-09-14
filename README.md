@@ -52,7 +52,8 @@ $ ~/Library/Weaver/bin/easy_install -U backports_abc && \
 
 5. Add `ponyd` symlink
 ```
-$ ln -s ~/Library/Weaver/bin/ponyd /usr/bin/ponyd
+$ sudo mkdir -p /usr/local/bin
+$ ln -s ~/Library/Weaver/bin/ponyd /usr/local/bin/ponyd
 ```
 
 6. Install DevTools
