@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            =  'Weaver'
-  s.version         =  '0.1.1'
+  s.version         =  '0.1.2'
   s.summary         =  'Remote debugging for Texture apps using Chrome DevTools.'
   s.homepage        =  'https://github.com/TextureGroup/Weaver'
   s.description     =  'Weaver is a remote debugging toolset. It is a client library and gateway server combination that uses Chrome DevTools on your browser to debug applications that use Texture framework'
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.ios.deployment_target = '8.0'
   s.source_files = 'ObjC/{DerivedSources,PonyDebugger,Weaver}/**/*.{h,m,mm}'
-  s.dependency 'Texture/Core', '>= 2.3.4'
+  s.dependency 'Texture', '>= 2.3.4'
   s.dependency 'SocketRocket', '0.5.1'
   s.xcconfig = { 'ENABLE_NS_ASSERTIONS' => 'YES' }
 end
