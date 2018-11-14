@@ -10,8 +10,21 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.ios.deployment_target = '8.0'
-  s.source_files = 'ObjC/{DerivedSources,PonyDebugger,Weaver}/**/*.{h,m,mm}'
+  
   s.dependency 'Texture', '>= 2.3.4'
   s.dependency 'SocketRocket', '0.5.1'
   s.xcconfig = { 'ENABLE_NS_ASSERTIONS' => 'YES' }
+
+  # Subspecs
+  s.subspec 'Core' do |core|
+    core.source_files = 'ObjC/{DerivedSources,PonyDebugger,Weaver}/**/*.{h,m,mm}'
+  end
+
+  s.subspec 'Video' do |video|
+    video.frameworks = ['AVFoundation', 'CoreMedia']
+    video.xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) AS_USE_VIDEO=1' }
+    video.dependency 'Weaver/Core'
+  end 
+
+  s.default_subspecs = 'Core', 'Video'
 end

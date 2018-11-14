@@ -357,6 +357,12 @@ ASDISPLAYNODE_INLINE AS_WARN_UNUSED_RESULT NSString *NSHexStringFromColor(UIColo
 
 @end
 
+// This needs to stay in sync with Texture
+#ifndef AS_USE_VIDEO
+  #define AS_USE_VIDEO 0
+#endif
+
+#if AS_USE_VIDEO
 @implementation ASVideoNode (PDCSSRuleMatchesProviding)
 
 - (NSArray<PDCSSProperty *> *)wv_CSSProperties
@@ -378,3 +384,4 @@ ASDISPLAYNODE_INLINE AS_WARN_UNUSED_RESULT NSString *NSHexStringFromColor(UIColo
 }
 
 @end
+#endif

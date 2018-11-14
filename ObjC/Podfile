@@ -1,8 +1,8 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '8.0'
+platform :ios, '9.0'
 
 target :'Weaver' do
-  pod 'Texture/Core', :git => 'git@github.com:TextureGroup/Texture.git', :branch => 'master'
+  pod 'Texture', :git => 'git@github.com:TextureGroup/Texture.git', :branch => 'master'
   pod 'SocketRocket', :inhibit_warnings => true
 end
