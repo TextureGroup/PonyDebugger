@@ -18,7 +18,7 @@
 #import <Weaver/PDDOMTypes.h>
 #import <Weaver/PDDOMTypes+UIKit.h>
 
-#import <AsyncDisplayKit/AsyncDisplayKit.h>
+#import <Texture/Texture.h>
 
 #import <UIKit/UIKit.h>
 

@@ -16,8 +16,8 @@
 
 #import <Weaver/PDCSSTypes.h>
 
-#import <AsyncDisplayKit/AsyncDisplayKit.h>
-#import <AsyncDisplayKit/ASCollectionElement.h>
+#import <Texture/Texture.h>
+#import <Texture/ASCollectionElement.h>
 
 #define kTDRuleMatchNameProps @"props"
 #define kTDRuleMatchNameStyle @"style"

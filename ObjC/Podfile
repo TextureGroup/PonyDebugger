@@ -3,6 +3,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 
 target :'Weaver' do
-  pod 'Texture', :git => 'git@github.com:TextureGroup/Texture.git', :branch => 'master'
+  # Temporary target fork with Texture rebrand until it's merged
+  pod 'Texture', :git => 'git@github.com:Kaspik/Texture.git', :branch => 'master'
+  # pod 'Texture', :git => 'git@github.com:TextureGroup/Texture.git', :branch => 'master'
   pod 'SocketRocket', :inhibit_warnings => true
 end

@@ -17,7 +17,7 @@
 
 #import <Weaver/PDCSSTypes.h>
 
-#import <AsyncDisplayKit/AsyncDisplayKit.h>
+#import <Texture/Texture.h>
 
 #import <UIKit/UIKit.h>
 
